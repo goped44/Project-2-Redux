@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2 Redux</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="banner">
+
+        <div class="navbar" id="navLinks">
+            <h2>!Nterior</h2>
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <nav>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="https://www.apple.com">BEDROOM</a></li>
+                    <li><a href="">DINING</a></li>
+                    <li><a href="">KITCHEN</a></li>
+                    <li><a href="">BACKYARD</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="bars">
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </div>
+
+        <div class="row">
+            <h3>DESIGN YOUR HOUSE</h3><br>
+            <p>Premium home design at a discounted price</p><br><br>
+            <a href="https://www.youtube.com"><button>Buy Now!</button></a>
+            <a href="https://www.youtube.com"><button>About Us</button></a>
+        </div>
+    </div>
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+        //this is a comment. 
+    </script>
+
+</body>
+</html>

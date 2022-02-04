@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(background.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    text-align: right;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 60px;
+    margin-top: 50px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+}
+nav ul li a:hover{
+    color: #009688;
+}
+.navbar h2{
+    text-align: left;
+    color: #fff;
+    font-size: 50px;
+    margin-left: 50px;
+    position: absolute;
+    top: 40px;
+}
+.row{
+    text-align: center;
+    margin-top: 18%;
+}
+.row h3{
+    color: #fff;
+    font-size: 50px;
+}
+.row p{
+    color: #fff;
+    font-size: 24px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    margin: 20px 15px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 3px solid #009688;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+button:hover{
+    width: 250px;
+    height: 60px;
+}
+.fa.fa-times{
+    display: none;
+}
+.fa.fa-bars{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .row h3{
+        font-size: 40px;
+    }
+    nav ul li{
+        display: block;
+        margin-top: 30px;
+    }
+    .navbar h2{
+        display: none;
+    }
+    .navbar{
+        position: absolute;
+        background: #009688;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+    }
+    .fa.fa-times{
+        display: block;
+        color: #fff;
+    }
+    .fa.fa-bars{
+        display: block;
+        color: #fff;
+    }
+    nav ul{
+        margin-left: 3%;
+    }
+    .navbar i{
+        font-size: 28px;
+        margin-left: 3%;
+        margin-top: 2%;
+    }
+    .bars{
+        text-align: right;
+        font-size: 35px;
+        margin-right: 8%;
+        padding-top: 8%;
+    }
+}
